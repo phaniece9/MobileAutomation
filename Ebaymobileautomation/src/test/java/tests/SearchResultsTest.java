@@ -32,15 +32,18 @@ public class SearchResultsTest extends BaseSetup {
 		((AndroidDeviceActionShortcuts) bs).pressKeyCode(AndroidKeyCode.ENTER);
 		//select sort
 		searchResult.sortby.click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
+		bs.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//select filter
 		searchResult.filter.click();
-		Thread.sleep(1000);
+		bs.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		//select price range
 		searchResult.pricerange.click();
-		Thread.sleep(1000);
-		searchResult.done.click();
 		
+		bs.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		searchResult.done.click();
+		bs.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		searchResult.select.click();
 		
 		
