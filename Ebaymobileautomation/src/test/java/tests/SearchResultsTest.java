@@ -21,6 +21,16 @@ public class SearchResultsTest extends BaseSetup {
 	@Test
 	public void searchAProduct() throws Exception{
 		loginTest.login();
+		
+		//read search product from properties file
+		String Filepath = "E:\\Projects\\Ebaymobileautomation\\Properties\\object.properties";
+		FileInputStream Locator = new FileInputStream(Filepath);
+		
+		Properties obj=new Properties();
+		
+		obj.load(Locator);
+		
+		
 		basepage.searchFld.isDisplayed();
 		basepage.searchFld.sendKeys(obj.getProperty("tvsearch"));
 		
