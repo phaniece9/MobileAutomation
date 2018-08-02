@@ -14,15 +14,15 @@ public class SearchResultsTest extends BaseSetup {
 	LoginTest loginTest;
 	SearchResultPage searchResult;
 	
-	String tv = "65 inch tv";
+	//String tv = "65 inch tv";
 	BaseSetup bs;
-	
+	Properties obj=new Properties();
 	
 	@Test
 	public void searchAProduct() throws Exception{
 		loginTest.login();
 		basepage.searchFld.isDisplayed();
-		basepage.searchFld.sendKeys(tv);
+		basepage.searchFld.sendKeys(obj.getProperty("tvsearch"));
 		
 		//moving down
 		
