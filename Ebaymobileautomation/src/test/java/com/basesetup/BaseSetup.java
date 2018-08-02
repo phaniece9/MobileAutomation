@@ -38,7 +38,7 @@ public class BaseSetup {
 	 DesiredCapabilities cap = new DesiredCapabilities();
 	 cap.setCapability("deviceName", properties.getProperty("DeviceName"));
 	 cap.setCapability("platformName", properties.getProperty("PlatFormName"));
-	 cap.setCapability("platformVersion", properties.getProperty("7.0"));
+	 cap.setCapability("platformVersion", properties.getProperty("PlatFormVersion"));
 	 cap.setCapability("appPackage", properties.getProperty("AppPackage"));
 	 cap.setCapability("appActivity", properties.getProperty("AppActivity"));
 	 URL u=new URL(properties.getProperty("URL"));
