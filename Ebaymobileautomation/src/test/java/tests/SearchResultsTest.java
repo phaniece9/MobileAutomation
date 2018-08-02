@@ -32,7 +32,7 @@ public class SearchResultsTest extends BaseSetup {
 		((AndroidDeviceActionShortcuts) bs).pressKeyCode(AndroidKeyCode.ENTER);
 		//select sort
 		searchResult.sortby.click();
-		//Thread.sleep(1000);
+		
 		bs.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//select filter
 		searchResult.filter.click();
