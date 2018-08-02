@@ -14,7 +14,7 @@ public class SearchResultsTest extends BaseSetup {
 	LoginTest loginTest;
 	SearchResultPage searchResult;
 	
-	//String tv = "65 inch tv";
+	
 	BaseSetup bs;
 	Properties obj=new Properties();
 	
