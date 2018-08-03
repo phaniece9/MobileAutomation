@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.Properties;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseSetup {
