@@ -53,7 +53,7 @@ public class BaseSetup {
 	 }
 	}
 
-	 @BeforeClass
+	 @AfterClass
 	 public void tearDown(){
 	        androidDriver.quit();
 	    }
