@@ -34,6 +34,8 @@ public class LoginTest extends BaseSetup {
 		WritableWorkbook wwb=Workbook.createWorkbook(f,rwb);
 		WritableSheet wsh=wwb.getSheet(0);
 		//read data from excel sheet
+		for(int i=1;i<nour;i++)
+		{
 		String username=rsh.getCell(0,1).getContents();
 		String password=rsh.getCell(1,1).getContents();
 		
@@ -63,6 +65,8 @@ public class LoginTest extends BaseSetup {
 	    	wsh.addCell(pa);
 	    	wwb.write();
 	    	wwb.close();
+			
+		}
 			
 		}
 	}
